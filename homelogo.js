@@ -1,5 +1,5 @@
 const init = () => {
-  const marquee = document.querySelector('[wb-data="marquee"]');
+  const marquee = document.querySelector('[wb-data="marque"]');
   if (!marquee) {
     return;
   }
@@ -29,7 +29,7 @@ const init = () => {
 
     tween = gsap.fromTo(
       marquee.children,
-      { x: 0 },
+      { x: 100 },
       { x: distanceToTranslate, duration, ease: "none", repeat: -1 }
     );
     tween.progress(progress);
@@ -46,7 +46,7 @@ const init = () => {
           func();
         },
         500,
-        event
+        evnt
       );
     };
   }
