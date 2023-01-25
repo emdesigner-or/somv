@@ -1,0 +1,26 @@
+document.addEventListener("DOMContentLoaded", function () {
+var firstSlider = new Splide('#first-slide', {
+      type: "loop",
+      updateOnMove: true,
+      pagination: false,
+      autoWidth: true,
+      drag   : 'free',
+      snap   : true,
+      arrows: 'slider',
+      isNavigation: 'slider',
+      focus:0
+	});
+
+var secondSlider = new Splide('#second-slide', {
+      type: "loop",
+      updateOnMove: true,
+      pagination: false,
+      autoWidth: true,
+      drag: false,
+      snap: true,
+      arrows: false,
+      isNavigation: false,
+      focus:0
+});
+	firstSlider.mount(window.splide.Extensions);
+});
