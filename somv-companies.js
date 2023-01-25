@@ -22,7 +22,5 @@ var secondSlider = new Splide('#second-slider', {
       isNavigation: false,
       focus:0
 });
-	firstSlider.mount(window.splide.Extensions);
-  secondSlider.mount(window.splide.Extensions);
-  firstSlider.sync(secondSlider);
+   firstSlider.mount(window.splide.Extensions);
 });
